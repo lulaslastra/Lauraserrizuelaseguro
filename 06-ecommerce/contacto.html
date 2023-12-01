@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Serrizuela Seguros</title>
+    <link rel="shortcut icon" href="./img/Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a href="/06-ecommerce/index.html">
+                    <img class="header__logo" src="img/Logo-removebg-preview.png" alt="imagen logo">
+                </a>
+                <h1 class="nombre-sitio">Laura <span>Serrizuela</span></h1>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="index.html">Inicio</a>
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="compañias.html">Seguros</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div><!--.header-barra-->
+        </div>
+    </header>
+    
+    <main class="contenido-principal contenedor ">
+        <div class="formulario-container">
+            <h2>Contacto</h2>
+        <form action="https://formsubmit.co/a30fd6f4f43ba598c633f862520ca6eb" method="POST" autocomplete="off"/>
+              <label for="nombre">Nombre y Apellido:</label>
+              <input type="text" id="nombre" name="nombre" required>
+        
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+        
+              <label for="motivo">Motivo de Consulta:</label>
+              <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>Selecciona el motivo de consulta</option>
+                <option value="informacion">Información sobre nuestros servicios</option>
+                <option value="poliza">Envío de póliza</option>
+                <option value="cotizacion">Cotización</option>
+              </select>
+        
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+              <input type="submit" value="Enviar">
+           
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/06-ecommerce/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenedor footer__contenido">
+            <nav class="footer__nav">
+                <a class="footer__enlace" href="index.html">Inicio</a>
+                <a class="footer__enlace" href="nosotros.html">Nosotros</a>
+                <a class="footer__enlace" href="compañias.html">Seguros</a>
+                <a class="footer__enlace" href="contacto.html">Contacto</a>
+            </nav>
+    
+            <p class="footer__copyright">Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
